@@ -1,0 +1,70 @@
+import { styled } from '@nextui-org/react';
+
+// Badge component will be available as part of the core library soon
+export const StyledBadge = styled('span', {
+  display: 'inline-block',
+  textTransform: 'uppercase',
+  padding: '$2 $3',
+  margin: '0 2px',
+  fontSize: '10px',
+  fontWeight: '$bold',
+  borderRadius: '14px',
+  letterSpacing: '0.6px',
+  lineHeight: 1,
+  boxShadow: '1px 2px 5px 0px rgb(0 0 0 / 5%)',
+  alignItems: 'center',
+  alignSelf: 'center',
+  color: '$white',
+  variants: {
+    type: {
+      active: {
+        bg: '$successLight',
+        color: '$successLightContrast'
+      },
+      finish: {
+        bg: '$successLight',
+        color: '$successLightContrast'
+      },
+      Passed: {
+        bg: '$successLight',
+        color: '$successLightContrast'
+      },
+
+      
+      error: {
+        bg: '$errorLight',
+        color: '$errorLightContrast'
+      },
+      Failed: {
+        bg: '$errorLight',
+        color: '$errorLightContrast'
+      },
+
+
+
+      vacation: {
+        bg: '$warningLight',
+        color: '$warningLightContrast'
+      },
+      waiting: {
+        bg: '$warningLight',
+        color: '$warningLightContrast'
+      },
+
+
+      allow: {
+        bg: '#B6EEF2',
+        color: '#17a2b8'
+      },
+
+      denied: {
+        bg: '$errorLight',
+        color: '$errorLightContrast'
+      },
+
+    }
+  },
+  defaultVariants: {
+    type: 'active'
+  }
+});
